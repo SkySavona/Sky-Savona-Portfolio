@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sky Savona | Frontend Developer</title>
+    <link rel="icon" type="image/x-icon" href="assets/favicon-2.ico" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
+  </head>
+  <body>
+    <div id="preloader">
+      <div class="loader"></div>
+    </div>
+
+    <header>
+      <nav id="navbar">
+        <div class="nav-content">
+          <img
+            id="personal-logo"
+            src="./assets/SKY SAVONA TECH LOGO.png"
+            alt="Sky Savona Logo"
+          />
+          <ul class="nav__link--list">
+            <li class="nav__link"><a href="#home">Home</a></li>
+            <li class="nav__link"><a href="#about">About</a></li>
+            <li class="nav__link"><a href="#projects">Projects</a></li>
+            <li class="nav__link"><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section id="home" class="hero">
+        <div class="hero-content fade-in">
+          <h1 class="title">
+            Hey, I'm <span class="gradient-text">Sky.</span>
+          </h1>
+          <p class="subtitle">I'm a <span id="typed-text"></span></p>
+          <p class="hero-description">
+            I'm passionate about building beautiful, user-friendly websites.
+            Let's create something amazing together!
+          </p>
+          <div class="cta-buttons">
+            <a href="#projects" class="btn btn-primary">View My Work</a>
+            <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="about">
+        <div class="container">
+          <h2 class="section-title fade-in">About Me</h2>
+          <div class="about-content">
+            <div class="about-text fade-in">
+              <p>
+                I'm a frontend developer with a passion for creating responsive
+                and intuitive user interfaces. With a strong foundation in HTML,
+                CSS, and JavaScript, I specialize in crafting engaging web
+                experiences.
+              </p>
+              <p>
+                My approach combines clean code practices with creative
+                problem-solving to deliver high-quality, performant web
+                applications.
+              </p>
+              <!DOCTYPE html>
+              <html lang="en">
+                <head>
+                  <meta charset="UTF-8" />
+                  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+                  <meta
+                    name="viewport"
+                    content="width=device-width, initial-scale=1.0"
+                  />
+                  <title></title>
+                  <link rel="stylesheet" href="./styles.css" />
+                </head>
+                <body>
+                  <section></section>
+                </body>
+              </html>
+              <ul class="about-me__links">
+                <li class="about__link click">
+                  <a
+                    href="https://www.linkedin.com/in/skyllarsavona/"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <i class="fa-brands fa-linkedin"></i>
+                  </a>
+                </li>
+                <li class="about__link click">
+                  <a
+                    href="https://github.com/SkySavona"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <i class="fa-brands fa-square-github"></i>
+                  </a>
+                </li>
+                <li class="about__link click">
+                  <a
+                    href="mailto:skyllarsavona@gmail.com"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <i class="fa-solid fa-envelope"></i>
+                  </a>
+                </li>
+                <li class="about__link click">
+                  <a
+                    href="https://drive.google.com/file/d/1XiWpKE3f5-1odt09m5djod-iW24dSE1J/view?usp=sharing"
+                    download=""
+                    rel="noreferrer"
+                  >
+                    <i class="fa-solid fa-file-pdf"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div id="skills-section" class="skills fade-in">
+              <div class="skill-bars">
+                <div class="skill-bar">
+                  <div class="skill-progress" data-percentage="90%">
+                    HTML/CSS
+                  </div>
+                </div>
+                <div class="skill-bar">
+                  <div class="skill-progress" data-percentage="85%">
+                    JavaScript
+                  </div>
+                </div>
+                <div class="skill-bar">
+                  <div class="skill-progress" data-percentage="80%">React</div>
+                </div>
+                <div class="skill-bar">
+                  <div class="skill-progress" data-percentage="75%">
+                    Node.js
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="projects" class="projects">
+        <div class="container">
+          <h2 class="section-title fade-in">My Projects</h2>
+          <div class="project-grid">
+            <!-- Projects will be dynamically inserted here by JavaScript -->
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="contact">
+        <div class="container">
+          <h2 class="section-title fade-in">Get In Touch</h2>
+          <form id="contact-form" class="fade-in">
+            <input type="text" name="name" placeholder="Your Name" required />
+            <input
+              type="email"
+              name="email"
+              placeholder="Your Email"
+              required
+            />
+            <textarea
+              name="message"
+              placeholder="Your Message"
+              required
+            ></textarea>
+            <button type="submit" class="btn btn-primary">Send Message</button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container">
+        <div class="footer-content">
+          <img
+          id="personal-logo__footer"
+          src="./assets/SKY_SAVONA_TECH_LOGO_WHITE_TRANSPARENT.png"
+          alt="Sky Savona Logo"
+        />
+          <p>&copy; 2024 Sky Savona. All rights reserved.</p>
+          <ul class="social-links">
+            <li>
+              <a
+                href="https://www.linkedin.com/in/skyllarsavona/"
+                target="_blank"
+                ><i class="fab fa-linkedin"></i
+              ></a>
+            </li>
+            <li>
+              <a href="https://github.com/SkySavona" target="_blank"
+                ><i class="fab fa-github"></i
+              ></a>
+            </li>
+            <li>
+              <a href="mailto:skyllarsavona@gmail.com"
+                ><i class="fas fa-envelope"></i
+              ></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+    <button id="scroll-to-top" aria-label="Scroll to top">
+      <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="app.js"></script>
+  </body>
+</html>
