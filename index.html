@@ -8,6 +8,18 @@
     <link rel="stylesheet" href="styles.css" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init({
+          publicKey: "NujskbET5DTCAooLA",
+        });
+      })();
+    </script>
   </head>
   <body>
     <div id="preloader">
@@ -28,22 +40,31 @@
             <li class="nav__link"><a href="#projects">Projects</a></li>
             <li class="nav__link"><a href="#contact">Contact</a></li>
           </ul>
+          <div class="burger-menu">
+            <div class="burger-icon">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </div>
         </div>
       </nav>
     </header>
 
     <main>
       <section id="home" class="hero">
-        <div class="hero-content fade-in">
-          <h1 class="title">
+        <div class="hero-content">
+          <h1 class="title animate-on-scroll fade-in-up">
             Hey, I'm <span class="gradient-text">Sky.</span>
           </h1>
-          <p class="subtitle">I'm a <span id="typed-text"></span></p>
-          <p class="hero-description">
+          <p class="subtitle animate-on-scroll fade-in-up">
+            I'm a <span id="typed-text"></span>
+          </p>
+          <p class="hero-description animate-on-scroll fade-in-up">
             I'm passionate about building beautiful, user-friendly websites.
             Let's create something amazing together!
           </p>
-          <div class="cta-buttons">
+          <div class="cta-buttons animate-on-scroll fade-in-up">
             <a href="#projects" class="btn btn-primary">View My Work</a>
             <a href="#contact" class="btn btn-secondary">Get In Touch</a>
           </div>
@@ -52,9 +73,9 @@
 
       <section id="about" class="about">
         <div class="container">
-          <h2 class="section-title fade-in">About Me</h2>
+          <h2 class="section-title">About Me</h2>
           <div class="about-content">
-            <div class="about-text fade-in">
+            <div class="about-text">
               <p>
                 I'm a frontend developer with a passion for creating responsive
                 and intuitive user interfaces. With a strong foundation in HTML,
@@ -66,22 +87,7 @@
                 problem-solving to deliver high-quality, performant web
                 applications.
               </p>
-              <!DOCTYPE html>
-              <html lang="en">
-                <head>
-                  <meta charset="UTF-8" />
-                  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-                  <meta
-                    name="viewport"
-                    content="width=device-width, initial-scale=1.0"
-                  />
-                  <title></title>
-                  <link rel="stylesheet" href="./styles.css" />
-                </head>
-                <body>
-                  <section></section>
-                </body>
-              </html>
+
               <ul class="about-me__links">
                 <li class="about__link click">
                   <a
@@ -149,7 +155,7 @@
 
       <section id="projects" class="projects">
         <div class="container">
-          <h2 class="section-title fade-in">My Projects</h2>
+          <h2 class="section-title-projects fade-in">My Projects</h2>
           <div class="project-grid">
             <!-- Projects will be dynamically inserted here by JavaScript -->
           </div>
@@ -182,10 +188,10 @@
       <div class="container">
         <div class="footer-content">
           <img
-          id="personal-logo__footer"
-          src="./assets/SKY_SAVONA_TECH_LOGO_WHITE_TRANSPARENT.png"
-          alt="Sky Savona Logo"
-        />
+            id="personal-logo__footer"
+            src="./assets/SKY_SAVONA_TECH_LOGO_WHITE_TRANSPARENT.png"
+            alt="Sky Savona Logo"
+          />
           <p>&copy; 2024 Sky Savona. All rights reserved.</p>
           <ul class="social-links">
             <li>
