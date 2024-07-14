@@ -106,7 +106,7 @@ const projects = [
   {
     title: "Prideful Pages Library",
     description: "A fully functional catalog website for a library.",
-    image: "./assets/prideful_pages_img.png",
+    image: "./assets/prideful_pages_image.png",
     technologies: ["HTML", "CSS", "JavaScript", "JSON", "Python"],
     liveLink: "https://pridefulpages.com",
     githubLink: "https://github.com/SkySavona/prideful-pages-library",
