@@ -1,15 +1,12 @@
-// Initialize EmailJS
 (function () {
   emailjs.init("NujskbET5DTCAooLA");
 })();
 
-// Preloader
 window.addEventListener("load", () => {
   const preloader = document.getElementById("preloader");
   preloader.style.display = "none";
 });
 
-// Smooth scrolling for navigation links
 document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
   anchor.addEventListener("click", function (e) {
     e.preventDefault();
@@ -32,7 +29,6 @@ function toggleMenu() {
 
 burgerMenu.addEventListener("click", toggleMenu);
 
-// Close menu when a link is clicked
 navList.addEventListener("click", (e) => {
   if (e.target.classList.contains("nav__link--anchor")) {
     toggleMenu();
@@ -48,7 +44,6 @@ window.addEventListener("scroll", () => {
 
   if (isMobile()) {
     if (scrollTop > lastScrollTop && scrollTop > 80) {
-      // Scrolling down
       if (!isNavbarHidden) {
         navbar.style.top = `-${navbar.offsetHeight}px`;
         isNavbarHidden = true;
@@ -57,12 +52,10 @@ window.addEventListener("scroll", () => {
         }
       }
     } else if (scrollTop < lastScrollTop && isNavbarHidden && scrollTop < 100) {
-      // Scrolling up past a certain point
       navbar.style.top = "0";
       isNavbarHidden = false;
     }
   } else {
-    // Desktop behavior (unchanged)
     if (scrollTop > lastScrollTop && scrollTop > 80) {
       if (!isNavbarHidden) {
         navbar.style.top = "-80px";
@@ -79,7 +72,6 @@ window.addEventListener("scroll", () => {
   lastScrollTop = scrollTop <= 0 ? 0 : scrollTop;
 });
 
-// Ensure proper display when resizing the window
 window.addEventListener("resize", () => {
   if (!isMobile()) {
     navbar.style.top = "0";
@@ -90,7 +82,6 @@ window.addEventListener("resize", () => {
   }
 });
 
-// Ensure proper display when resizing the window
 window.addEventListener("resize", () => {
   if (!isMobile()) {
     navbar.style.top = "0";
@@ -100,14 +91,32 @@ window.addEventListener("resize", () => {
     }
   }
 });
-// Dynamic project loading
 const projectGrid = document.querySelector(".project-grid");
 const projects = [
+  {
+    title: "Apple Website Clone",
+    description:
+      "An educational clone of an Apple-inspired website showcasing the iPhone 15.",
+    image: "./assets/apple-clone-img.png",
+    technologies: [
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "React",
+      "Vite",
+      "Node.js",
+      "Tailwind CSS",
+      "GSAP",
+      "Three.js",
+    ],
+    liveLink: "https://apple-website-clone-iota.vercel.app/",
+    githubLink: "https://github.com/SkySavona/Apple-Website-Clone",
+  },
   {
     title: "Prideful Pages Library",
     description: "A fully functional catalog website for a library.",
     image: "./assets/prideful_pages_image.png",
-    technologies: ["HTML", "CSS", "JavaScript", "JSON", "Python"],
+    technologies: ["HTML", "CSS", "JavaScript", "Node.js", "JSON", "Python"],
     liveLink: "https://pridefulpages.com",
     githubLink: "https://github.com/SkySavona/prideful-pages-library",
   },
@@ -116,11 +125,10 @@ const projects = [
     description:
       "A detailed recreation of the Treact SaaS Product Landing Page.",
     image: "./assets/treact_project_img.png",
-    technologies: ["HTML", "CSS", "JavaScript"],
+    technologies: ["HTML", "CSS", "JavaScript", "Node.js"],
     liveLink: "https://skysavona.github.io/Treact-Replica-Project/",
     githubLink: "https://skysavona.github.io/Treact-Replica-Project/",
   },
-  // Add more projects here
 ];
 
 function createProjectCard(project) {
@@ -153,14 +161,12 @@ function createProjectCard(project) {
 }
 
 function openProjectDetails(projectId) {
-  // Implement the logic to open project details page or modal
   console.log(`Opening project details for project ID: ${projectId}`);
 }
 projects.forEach((project) => {
   projectGrid.innerHTML += createProjectCard(project);
 });
 
-// Intersection Observer for fade-in animations
 const faders = document.querySelectorAll(".fade-in");
 const appearOptions = {
   threshold: 0.5,
@@ -186,7 +192,6 @@ faders.forEach((fader) => {
   appearOnScroll.observe(fader);
 });
 
-// Typing effect for the hero section
 const typed = new Typed("#typed-text", {
   strings: ["Frontend Developer", "Problem Solver", ""],
   typeSpeed: 50,
@@ -212,14 +217,13 @@ contactForm.addEventListener("submit", function (e) {
 
   console.log("Sending email with data:", formData);
 
-  // Use EmailJS to send the form data
   emailjs
     .send("service_ik5f5gx", "template_bs2s41b", formData, "NujskbET5DTCAooLA")
     .then(
       function (response) {
         console.log("EmailJS SUCCESS!", response);
         alert("Thank you for your message! I will get back to you soon.");
-        contactForm.reset(); // Clear the form
+        contactForm.reset();
       },
       function (error) {
         console.error("EmailJS FAILED...", error);
@@ -242,7 +246,7 @@ document.addEventListener("DOMContentLoaded", () => {
         }
       });
     },
-    { threshold: 0.15}
+    { threshold: 0.15 }
   );
 
   sections.forEach((section) => {
@@ -262,7 +266,6 @@ function animateSkillBars() {
   });
 }
 
-// Trigger skill bars animation when the skills section is in view
 const skillsSection = document.querySelector(".skills");
 const skillsObserver = new IntersectionObserver(
   (entries) => {
@@ -276,7 +279,6 @@ const skillsObserver = new IntersectionObserver(
 
 skillsObserver.observe(skillsSection);
 
-// Scroll to top button
 const scrollToTopBtn = document.getElementById("scroll-to-top");
 
 window.addEventListener("scroll", () => {
