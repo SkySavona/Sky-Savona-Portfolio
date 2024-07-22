@@ -107,9 +107,8 @@ const projects = [
       "Node.js",
       "Tailwind CSS",
       "TypeScript",
-      "ESLint",
       "Convex",
-      "Clerk"
+      "Clerk",
     ],
     liveLink: "https://podwav-saas-podcast-clone.vercel.app//",
     githubLink: "https://github.com/SkySavona/PodWav-saas-podcast-clone",
@@ -140,6 +139,23 @@ const projects = [
     technologies: ["HTML", "CSS", "JavaScript", "Node.js", "JSON", "Python"],
     liveLink: "https://pridefulpages.com",
     githubLink: "https://github.com/SkySavona/prideful-pages-library",
+  },
+  {
+    title: "Cat Image Generator",
+    description:
+      "A React application that fetches and displays images of various cat breeds using the Cat API.",
+    image: "./assets/cat-image.png",
+    technologies: [
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "React",
+      "Tailwind CSS",
+      "Node.js",
+      "JSON",
+    ],
+    liveLink: "https://cat-generator-react.vercel.app/",
+    githubLink: "https://github.com/SkySavona/cat-generator-react",
   },
   {
     title: "Treact Replica Project",
