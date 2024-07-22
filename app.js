@@ -94,6 +94,27 @@ window.addEventListener("resize", () => {
 const projectGrid = document.querySelector(".project-grid");
 const projects = [
   {
+    title: "PodWav: Saas Podcast Platform",
+    description:
+      "PodWav is a podcast platform that allows users to input information into an AI generator to create podcasts.",
+    image: "./assets/podwav_img.png",
+    technologies: [
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "React",
+      "Next.js",
+      "Node.js",
+      "Tailwind CSS",
+      "TypeScript",
+      "ESLint",
+      "Convex",
+      "Clerk"
+    ],
+    liveLink: "https://podwav-saas-podcast-clone.vercel.app//",
+    githubLink: "https://github.com/SkySavona/PodWav-saas-podcast-clone",
+  },
+  {
     title: "Apple Website Clone",
     description:
       "An educational clone of an Apple-inspired website showcasing the iPhone 15.",
