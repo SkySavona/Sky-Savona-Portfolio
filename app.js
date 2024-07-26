@@ -114,6 +114,26 @@ const projects = [
     githubLink: "https://github.com/SkySavona/PodWav-saas-podcast-clone",
   },
   {
+    title: "NFT Marketplace Intership",
+    description:
+      "This NFT Marketplace project was created during a virtual internship and is a React-based web app for trading and displaying NFTs, leveraging Firebase and Axios.",
+    image: "./assets/nft-marketplace.png",
+    technologies: [
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "React",
+      "Node.js",
+      "Axios",
+      "React Slick",
+      "React Router",
+      "AOS",
+      "Firebase",
+    ],
+    liveLink: "https://sky-internship-nft-platform.vercel.app/",
+    githubLink: "https://github.com/SkySavona/nft-marketplace-internship",
+  },
+  {
     title: "Apple Website Clone",
     description:
       "An educational clone of an Apple-inspired website showcasing the iPhone 15.",
